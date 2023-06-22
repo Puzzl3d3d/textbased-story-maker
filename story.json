@@ -1,0 +1,31 @@
+{
+    "1": {
+        "type": "choice",
+        "prompt": "Hello! This is an input! Select your choice:",
+
+        "inputText": "Optional field | Choose your input! ",
+
+        "choices": {
+            "A": "This is choice A",
+            "B": "This is choice B",
+            "C": "Choice C!"
+        }
+    },
+    "2": {
+        "type": "choiceExtend",
+        "prompt": "",
+
+        "A": {
+            "response": "This is printed when choice A is chosen",
+            "function": "onChoiceA"
+        },
+        "B": {
+            "response": "This is for choice B!"
+        },
+        "C": "And choice C!"
+    },
+    "3": {
+        "type": "context",
+        "prompt": "This is an extra line"
+    }
+}
